@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimes Repertoire</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Chimes Repertoire</h1>
+    <input type="text" id="search" placeholder="Search for a song...">
+    <ul id="songList"></ul>
+
+    <h2>Now Listening</h2>
+    <input type="text" id="neoName" placeholder="Your Name">
+    <select id="nowListening">
+        <option value="">Select a Song</option>
+    </select>
+    <button onclick="updateNowListening()">Update</button>
+
+    <h2>Live Neo Listening Tracker</h2>
+    <ul id="liveTracker"></ul>
+</body>
+</html>
